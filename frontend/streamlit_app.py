@@ -3,7 +3,9 @@
 Streamlit frontend for the Sentiment-based AI Text Generator.
 Run: streamlit run frontend/streamlit_app.py
 """
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import streamlit as st
 from src.app_core import ai_text_generator
 
